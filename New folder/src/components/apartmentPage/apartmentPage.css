@@ -1,0 +1,31 @@
+.itemWrapper .itemDetail {
+  border-bottom: 1px solid gray;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .itemWrapper .itemDetail span {
+    font-weight: bold; }
+
+.itemWrapper .itemButtons {
+  text-align: center;
+  margin: 10px 0; }
+  .itemWrapper .itemButtons button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: 1px solid red; }
+  .itemWrapper .itemButtons .bntAsk {
+    background: red;
+    color: white; }
+    .itemWrapper .itemButtons .bntAsk:hover {
+      background: darkred; }
+  .itemWrapper .itemButtons .bntShare {
+    color: red;
+    background: white; }
+    .itemWrapper .itemButtons .bntShare:hover {
+      border: 1px solid gray;
+      background: lightgray; }

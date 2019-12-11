@@ -1,0 +1,117 @@
+.headerWrapper {
+  border-bottom: 1px solid gray; }
+  .headerWrapper a {
+    color: black;
+    text-decoration: none; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .header .burger {
+    margin: auto 0;
+    border: 1px solid transparent;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .header .burger div {
+      width: 30px;
+      background: black;
+      height: 2px;
+      margin: 5px; }
+    .header .burger:hover {
+      border: 1px solid gray;
+      border-radius: 5px; }
+  .header .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header .navBar .logo {
+      margin: auto 0; }
+  .header ul {
+    list-style: none;
+    margin: 0; }
+  .header p {
+    margin: 0;
+    text-align: center; }
+  .header li {
+    padding: 10px; }
+    .header li :hover {
+      color: red; }
+    .header li .liTitle p {
+      color: black;
+      font-weight: bold; }
+  .header .label {
+    border-bottom: 2px solid transparent;
+    width: auto; }
+    .header .label:hover {
+      border-bottom: 2px solid red; }
+  .header .innerMenu {
+    width: 100%;
+    position: absolute;
+    margin-top: 13px;
+    left: 0;
+    z-index: 5;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid lightgray; }
+    .header .innerMenu p {
+      text-align: left; }
+  .header .logWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header .logWrapper .mobileLogo {
+      position: relative; }
+      .header .logWrapper .mobileLogo .mobileInnerMenu {
+        position: absolute;
+        width: 300px;
+        background: white;
+        z-index: 5;
+        right: 0;
+        top: 107%;
+        border: 1px solid lightgray; }
+        .header .logWrapper .mobileLogo .mobileInnerMenu .mobileCard {
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          margin: 10px; }
+    .header .logWrapper > div {
+      margin: auto 0;
+      text-align: center;
+      height: 100%;
+      border-bottom: 2px solid transparent;
+      padding: 10px; }
+      .header .logWrapper > div:hover {
+        border-bottom: 2px solid red; }
+    .header .logWrapper .Advertise {
+      border-left: 1px solid gray; }
+
+@media only screen and (max-width: 1000px) {
+  .burgerMenu {
+    display: inline-block;
+    position: fixed;
+    left: -200px;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 10000;
+    width: 200px;
+    border-right: 1px solid gray;
+    border-top: 2px solid white;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+  .burgerMenu .label {
+    border-bottom: 1px solid gray; } }
+
+.open {
+  left: 0; }

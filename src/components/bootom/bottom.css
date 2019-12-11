@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.contactWrapper {
+  background: #333;
+  margin-top: 20px; }
+  .contactWrapper .share {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .contactWrapper .share ul {
+      margin: 0;
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 25px; }
+    .contactWrapper .share a {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      margin: 10px; }
+    .contactWrapper .share .apps a:hover {
+      background: gray; }

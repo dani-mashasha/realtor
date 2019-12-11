@@ -1,0 +1,57 @@
+.main_wrapper{
+  background-image: url("https://static.rdc.moveaws.com/images/hero/nyc/hp-hero-ny-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+
+  width: 100%;
+  font-size: 16px;
+
+  & .main{
+      padding: 150px 0;
+
+
+    & input{
+      padding: 10px;
+      width: 300px;
+    }
+    & button{
+      padding: 11px;
+      background: red;
+      border: none;
+      color: white;
+      transition: 0.5s;
+      &:hover{
+        background: darkred;
+      }
+    }
+
+
+    & .main_menu{
+     display: flex;
+     margin: 30px auto;
+     list-style: none;
+     width: 400px;
+     justify-content: space-around;
+
+
+
+     & a{
+       padding: 5px;
+       color:white;
+       text-decoration: none;
+       border-bottom: 4px solid transparent;
+       transition: 0.2s;
+
+       &:hover{
+         border-bottom: 4px solid red;
+       }
+
+     }
+
+
+    }
+
+  }
+}

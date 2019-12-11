@@ -1,0 +1,29 @@
+.whWrapper{
+    display: block;
+    justify-content:center;
+    margin-top: 20px;
+}
+
+.whWrapper ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    transition: 0.2s;
+}
+.whWrapper ul:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+;
+}
+.whWrapper ul li{
+    text-align: center;
+    padding: 10px;
+}
+
+.whWrapper h3{
+    color: cadetblue;
+}
+
+.whWrapper h4{
+    color:gray;
+}

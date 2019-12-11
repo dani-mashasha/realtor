@@ -1,0 +1,52 @@
+.formGrid {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 450px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .formGrid .formItem {
+    position: relative; }
+    .formGrid .formItem .innerForm {
+      width: 400px;
+      background: white;
+      position: absolute;
+      z-index: 2;
+      border: 1px solid gray;
+      border-radius: 5px;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-top: 5px; }
+      .formGrid .formItem .innerForm h6 {
+        background: lightgray; }
+    .formGrid .formItem button {
+      background: white;
+      border-radius: 5px;
+      border: 1px solid gray;
+      padding: 5px;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+      .formGrid .formItem button:hover {
+        background: lightgray; }
+    .formGrid .formItem:active .innerForm {
+      display: block; }
+  .formGrid .bntSubmit {
+    background: white;
+    border-radius: 10%;
+    border: 1px solid red;
+    padding: 5px;
+    color: red;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .formGrid .bntSubmit:hover {
+      border: 1px solid black;
+      color: black;
+      background: indianred; }

@@ -1,0 +1,183 @@
+.headerWrapper{
+  border-bottom: 1px solid gray;
+  & a{
+    color: black;
+    text-decoration: none;
+  }
+}
+
+
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+
+
+
+  & .burger{
+    margin: auto 0;
+    border: 1px solid transparent;
+    transition: 0.5s;
+
+    & div{
+      width: 30px;
+      background: black;
+      height: 2px;
+      margin: 5px;
+    }
+    &:hover{
+      border: 1px solid gray;
+      border-radius: 5px;
+
+    }
+
+  }
+
+
+
+
+
+  & .navBar{
+    display: flex;
+
+    & .logo{
+      margin: auto 0;
+    }
+  }
+
+
+  & ul{
+    list-style: none;
+    margin: 0;
+  }
+  & p{
+    margin: 0;
+    text-align: center;
+  }
+
+  & li {
+    padding: 10px;
+    & :hover{
+      color: red;
+    }
+    & .liTitle p{
+      color: black;
+      font-weight: bold;
+
+    }
+
+  }
+
+  & .label{
+    border-bottom: 2px solid transparent;
+    width: auto;
+    &:hover{
+      border-bottom: 2px solid red;
+
+    }
+    &:hover .innerMenu{
+
+    }
+  }
+
+
+  & .innerMenu{
+    width: 100%;
+    position: absolute;
+    margin-top: 13px;
+    left: 0;
+    z-index: 5;
+    background: white;
+    display: flex;
+    border: 1px solid lightgray;
+
+
+    & p{
+      text-align: left;
+    }
+
+  }
+
+
+
+  & .logWrapper{
+
+    & .mobileLogo{
+      position: relative;
+
+
+      & .mobileInnerMenu{
+        position: absolute;
+        width: 300px;
+        background: white;
+        z-index: 5;
+        right: 0;
+        top:107%;
+        border: 1px solid lightgray;
+
+
+        & .mobileCard{
+          justify-content: space-between;
+          margin: 10px;
+        }
+
+      }
+    }
+
+
+    & > div{
+      margin: auto 0;
+      text-align: center;
+      height: 100%;
+      border-bottom: 2px solid transparent;
+      padding: 10px;
+
+      &:hover{
+        border-bottom: 2px solid red;
+      }
+      //& :hover a{
+      //  color: red;
+      //}
+    }
+    display: flex;
+
+    //& a{
+    //
+    //}
+    //& a:hover{
+    //  color: red;
+    //}
+
+    & .Advertise{
+      border-left: 1px solid gray;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .burgerMenu {
+    display: inline-block;
+    position: fixed;
+    left:-200px;
+    background: white;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 10000;
+    width: 200px;
+    border-right: 1px solid gray;
+    border-top: 2px solid white;
+    transition: 0.5s;
+  }
+  .burgerMenu .label{
+    border-bottom: 1px solid gray;
+  }
+  .burgerMenu .innerMenu{
+
+  }
+}
+
+.open{
+  left: 0;
+}

@@ -1,0 +1,31 @@
+.counterWrapper{
+    text-align: center;
+    padding: 20px;
+}
+.myBnt{
+    padding: 5px;
+    border: 2px solid black;
+}
+span{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.myBnt:hover{
+    background: darkslategray;
+}
+.plus{
+    background: #4CAF50;
+}
+.minus{
+    background: dodgerblue;
+}
+.multi{
+    background:cadetblue ;
+}
+.reset{
+    background: red;
+}
+.bntWrapper input{
+    padding: 5px;
+}

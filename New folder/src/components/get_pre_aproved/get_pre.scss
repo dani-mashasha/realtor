@@ -1,0 +1,24 @@
+.getPreWrapper{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px 0;
+  & .icon{
+    width: 20px;
+    fill: #4CAF50;
+  }
+  & p{
+    margin: auto 0;
+  }
+  & button{
+    color: red;
+    border-radius: 20px;
+    border: 1px solid red;
+    background: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    &:hover{
+      background: lightgray;
+    }
+  }
+}

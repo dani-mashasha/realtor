@@ -1,0 +1,58 @@
+
+.formGrid{
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 450px;
+  align-items: center;
+  & .formItem {
+      position: relative;
+    & .innerForm{
+      //display: none;
+      width: 400px;
+      background: white;
+      position: absolute;
+      z-index: 2;
+      border: 1px solid gray;
+      border-radius: 5px;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-top: 5px;
+
+      & h6{
+        background: lightgray;
+      }
+    }
+
+    & button{
+      background: white;
+      border-radius: 5px;
+      border: 1px solid gray;
+      padding: 5px;
+      transition: 0.5s;
+      &:hover{
+        background: lightgray;
+      }
+    }
+
+    &:active .innerForm{
+      display: block;
+    }
+  }
+
+  .bntSubmit{
+    background: white;
+    border-radius: 10%;
+    border: 1px solid red;
+    padding: 5px;
+    color: red;
+    transition: 0.5s;
+    &:hover{
+      border: 1px solid black;
+      color: black;
+      background: indianred;
+    }
+  }
+
+}

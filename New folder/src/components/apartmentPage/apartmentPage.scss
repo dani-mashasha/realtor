@@ -1,0 +1,46 @@
+.itemWrapper{
+
+
+  & .itemDetail{
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+
+    & span{
+      font-weight: bold;
+    }
+  }
+
+  & .itemButtons{
+    text-align: center;
+    margin: 10px 0;
+    & button{
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      margin: 0 20px;
+      transition: 0.3s;
+      border:1px solid red;
+    }
+    & .bntAsk{
+      background: red;
+      color: white;
+      &:hover{
+        background:darkred;
+
+      }
+
+    }
+    & .bntShare{
+      color: red;
+      background: white;
+
+      &:hover{
+        border:1px solid gray;
+        background: lightgray;
+
+
+      }
+    }
+  }
+}
+
